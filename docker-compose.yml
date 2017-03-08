@@ -1,0 +1,8 @@
+version: '2'
+services:
+  rabbit_test:
+    build: .
+    depends_on:
+     - rabbit
+  rabbit:
+    image: 'rabbitmq:latest'
