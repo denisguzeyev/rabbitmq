@@ -30,7 +30,7 @@ result = channel.queue_declare(exclusive=True)
 queue_name = result.method.queue
 
 for severity in config.sensor_list:
-    channel.queue_bind(exchange='direct_logs',
+    channel.queue_bind(exchange='units',
                        queue=queue_name,
                        routing_key=severity)
 
