@@ -11,7 +11,7 @@ class Config(object):
 	'''
 	def __init__(self):
 		'''connection params'''
-		self._host = 'localhost'
+		self._host = 'rabbit'
 		self._port = 5672
 		self._queue = 'sensor_queue'
 		
