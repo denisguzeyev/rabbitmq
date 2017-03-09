@@ -31,7 +31,7 @@ def main():
 		channel.exchange_declare(exchange=exchange,
 	                         type='direct')
 		for el in args:
-			channel.basic_publish(exchange='direct_logs',
+			channel.basic_publish(exchange=exchange,
 			                      routing_key=el,
 			                      body=message,
 			                      properties=properties)
