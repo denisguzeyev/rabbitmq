@@ -10,4 +10,3 @@ RUN pip install -r requirements.txt
 
 ENTRYPOINT ["python"]
 CMD ["./rabbitmq_task/sensor_listener.py"]
-CMD ["./rabbitmq_task/sensor_listener_agg.py"]
